@@ -1,0 +1,29 @@
+{
+  "name": "laurence",
+  "version": "1.0.0",
+  "description": "a simple cache for offline development",
+  "main": "dist/laurence.js",
+  "types": "dist/laurence.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salemhilal/laurence.git"
+  },
+  "keywords": [
+    "cache",
+    "offline",
+    "development"
+  ],
+  "author": "Salem Hilal <salemhilal@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salemhilal/laurence/issues"
+  },
+  "homepage": "https://github.com/salemhilal/laurence#readme",
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}
