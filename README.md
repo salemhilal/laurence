@@ -1,13 +1,13 @@
-# meet Laurence
+# Laurence
 
-A simple cache for offline development. Assumes you use  for requests.
+A simple cache for offline development.
 
 ## in short
 
-1. install Laurence
+1. install Laurence in your app: `import "laurence";`
 2. make some network requests using [`fetch()`][fetch]
 3. disconnect from the internet
-4. make those same network requests successfully
+4. make those same network requests again successfully
 
 ## details
 
@@ -31,7 +31,7 @@ npm install --save-dev laurence
 and in your app,
 ```js
 import "whatwg-fetch"; // Make sure any fetch polyfill you use comes first.
-import "laurence";     // Please don’t use this in prod though. That’s a terrible idea.
+import "laurence";     // Please don’t rely on this in prod though. That’s a terrible idea.
 ```
 
 ## some important notes
@@ -40,11 +40,11 @@ There’s a lot that you should know about Laurence.
 
 #### Laurence isn’t for production
 
-Laurence is meant as a development tool first and foremost.
+**Laurence is meant as a development tool, not as a production cache.**
 
-I wrote Laurence at an airport in way less time than it should take to build something
-production-ready, so **please don’t use this to actually cache parts of your app**. Laurence
-has no logic for cache invalidation and doesn’t come with all the other niceties 
+I wrote Laurence [at an airport][twitter] in way less time than it should take to build
+something production-ready, so **please don’t use this to actually cache parts of your app**.
+Laurence has no logic for cache invalidation and doesn’t come with all the other niceties
 that you’d expect from a cache (like TTL or eviction policies). 
 
 #### Laurence stores URLs as plain text in localStorage
@@ -69,3 +69,4 @@ status, status text, and the actual body (which it reads out and persists as tex
 
 [fetch]:https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
 [whatwg-fetch]:https://github.github.io/fetch/
+[twitter]:https://twitter.com/technoheads/status/944289168452145153
