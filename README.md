@@ -4,12 +4,12 @@ A simple cache for offline development.
 
 ## in short
 
-1. install Laurence in your app: `import "laurence";`
+1. add Laurence to your app: `import "laurence";`
 2. make some network requests using [`fetch()`][fetch]
 3. disconnect from the internet
 4. make those same network requests again successfully
 
-## details
+## motivation
 
 Sometimes you:
   * don’t have internet, but want to work on something that makes network requests.
