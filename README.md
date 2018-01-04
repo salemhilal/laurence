@@ -40,7 +40,7 @@ There’s a lot that you should know about Laurence.
 
 #### Laurence isn’t for production
 
-**Laurence is meant as a development tool, not as a production cache.**
+_Laurence is meant as a development tool, not as a production cache._
 
 I wrote Laurence [at an airport][twitter] in way less time than it should take to build
 something production-ready, so **please don’t use this to actually cache parts of your app**.
